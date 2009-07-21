@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<package packagerversion="1.4.0a12" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+http://pear.php.net/dtd/tasks-1.0.xsd
+http://pear.php.net/dtd/package-2.0
+http://pear.php.net/dtd/package-2.0.xsd">
+    <name>File_Bittorrent2</name>
+    <channel>pear.php.net</channel>
+    <summary>Decode and Encode data in Bittorrent format</summary>
+    <description>
+        This package consists of three classes which handles the encoding and decoding of data in Bittorrent format.
+        You can also extract useful informations from .torrent files, create .torrent files and query the torrent&apos;s scrape page to get its statistics.
+		PHP5 only.
+    </description>
+    <lead>
+        <name>Markus Tacker</name>
+        <user>tacker</user>
+        <email>m@tacker.org</email>
+        <active>yes</active>
+    </lead>
+    <developer>
+        <name>Justin Jones</name>
+        <user>nagash</user>
+        <email>j.nagash@gmail.com</email>
+        <active>no</active>
+    </developer>
+	<date>2009-04-26</date>
+	<time>00:00:00</time>
+	<version>
+		<release>1.3.1</release>
+		<api>94</api>
+	</version>
+	<stability>
+		<release>stable</release>
+		<api>stable</api>
+	</stability>
+	<license uri="http://www.gnu.org/copyleft/lesser.html">LGPL</license>
+	<notes>
+		* Fixes Bug #16148: Wrong int presentation in encode
+	</notes>
+    <contents>
+        <dir name="/">
+            <dir name="File">
+                <dir name="Bittorrent2">
+                    <file name="Decode.php" role="php" />
+                    <file name="Encode.php" role="php" />
+                    <file name="MakeTorrent.php" role="php" />
+                    <file name="Exception.php" role="php" />
+                </dir>
+            </dir>
+            <file name="example.php" role="doc" />
+            <file name="example_mktorrent.php" role="doc" />
+            <file name="install-x86-universal-2005.0.iso.torrent" role="doc" />
+            <file name="scrape.php" role="doc" />
+            <file name="torrentinfo.php" role="doc" />
+            <dir name="Tests">
+                <file name="AllTests.php" role="test" />
+                <file name="Bug7406.php" role="test" />
+                <file name="Bug8085.php" role="test" />
+				<file name="Bug14013.php" role="test" />
+				<file name="Bug15453.php" role="test" />
+				<file name="Bug16148.php" role="test" />
+				<file name="ticket-19.php" role="test" />
+                <file name="FileBittorrent2.php" role="test" />
+            </dir>
+        </dir>
+    </contents>
+    <dependencies>
+        <required>
+            <php>
+                <min>5.0.0</min>
+            </php>
+            <pearinstaller>
+                <min>1.5.4</min>
+            </pearinstaller>
+        </required>
+    </dependencies>
+    <phprelease />
+    <changelog>
+    	<release>
+    		<date>2009-04-26</date>
+			<time>00:00:00</time>
+			<version>
+				<release>1.3.1</release>
+				<api>94</api>
+			</version>
+			<stability>
+				<release>stable</release>
+				<api>stable</api>
+			</stability>
+			<license uri="http://www.gnu.org/copyleft/lesser.html">LGPL</license>
+			<notes>
+				* Fixes Bug #16148: Wrong int presentation in encode
+			</notes>
+		</release>
+    	<release>
+			<date>2009-03-22</date>
+			<time>00:00:00</time>
+			<version>
+				<release>1.3.0</release>
+				<api>94</api>
+			</version>
+			<stability>
+				<release>stable</release>
+				<api>stable</api>
+			</stability>
+			<license uri="http://www.gnu.org/copyleft/lesser.html">LGPL</license>
+			<notes>
+				* Fixed File_Bittorrent2_Decode::getAnnounceList() not returning announce list.
+				* Added option to File_Bittorrent2_Decode::getInfoHash() to return raw info_hash.
+			</notes>
+		</release>
+		<release>
+			<date>2009-01-26</date>
+			<time>00:00:00</time>
+			<version>
+				<release>1.2.2</release>
+				<api>82</api>
+			</version>
+			<stability>
+				<release>stable</release>
+				<api>stable</api>
+			</stability>
+			<license uri="http://www.gnu.org/copyleft/lesser.html">LGPL</license>
+			<notes>
+				* Fixed a problem with trackers escaping spaces in dictionary keys in scrape responses. See PEAR Bug #15453.
+			</notes>
+		</release>
+		<release>
+			<date>2009-01-25</date>
+			<time>00:00:00</time>
+			<version>
+				<release>1.2.1</release>
+				<api>82</api>
+			</version>
+			<stability>
+				<release>stable</release>
+				<api>stable</api>
+			</stability>
+			<license uri="http://www.gnu.org/copyleft/lesser.html">LGPL</license>
+			<notes>
+				* Changed PEAR dependency to 1.5.4. See http://pear.php.net/advisory-20070507.txt
+				* Added test case for Bug #15453
+			</notes>
+		</release>
+		<release>
+			<date>2008-06-12</date>
+			<time>00:00:00</time>
+			<version>
+				<release>1.2.0</release>
+				<api>82</api>
+			</version>
+			<stability>
+				<release>stable</release>
+				<api>stable</api>
+			</stability>
+			<license uri="http://www.gnu.org/copyleft/lesser.html">LGPL</license>
+			<notes>
+				* Implemented private flag for torrents. See PEAR Bug #14013.
+			</notes>
+        </release>
+		<release>
+            <date>2008-01-12</date>
+            <time>00:00:00</time>
+            <version>
+                <release>1.1.0</release>
+                <api>78</api>
+            </version>
+            <stability>
+                <release>stable</release>
+                <api>stable</api>
+            </stability>
+            <license uri="http://www.gnu.org/copyleft/lesser.html">LGPL</license>
+            <notes>
+                * Stable Release
+		        * Added File_Bittorrent2_MakeTorrent::addFiles() and File_Bittorrent2_MakeTorrent::setName() by barry hunter
+            </notes>
+        </release>
+        <release>
+            <date>2007-08-26</date>
+            <time>00:00:00</time>
+            <version>
+                <release>1.0.0RC1</release>
+                <api>74</api>
+            </version>
+            <stability>
+                <release>beta</release>
+                <api>stable</api>
+            </stability>
+            <license uri="http://www.gnu.org/copyleft/lesser.html">LGPL</license>
+            <notes>
+                * First PHP5 only release
+                * Introduced Exceptions
+            </notes>
+        </release>
+    </changelog>
+</package>

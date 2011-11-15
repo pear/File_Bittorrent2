@@ -34,13 +34,13 @@
     error_reporting(E_ALL);
     ini_set('display_errors', 1);
 
-    require_once 'Tests/FileBittorrent2.php';
-    require_once 'Tests/Bug7406.php';
-    require_once 'Tests/Bug8085.php';
-    require_once 'Tests/Bug14013.php';
-    require_once 'Tests/Bug15453.php';
-    require_once 'Tests/Bug16148.php';
-    require_once 'Tests/ticket-19.php';
+    require_once 'tests/FileBittorrent2.php';
+    require_once 'tests/Bug7406.php';
+    require_once 'tests/Bug8085.php';
+    require_once 'tests/Bug14013.php';
+    require_once 'tests/Bug15453.php';
+    require_once 'tests/Bug16148.php';
+    require_once 'tests/ticket-19.php';
 
     /**
     * Test for File_Bittorrent2

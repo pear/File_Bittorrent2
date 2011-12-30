@@ -34,12 +34,12 @@
     ini_set('display_errors', 1);
 
     require_once 'tests/FileBittorrent2Test.php';
-    require_once 'tests/Bug7406.php';
-    require_once 'tests/Bug8085.php';
-    require_once 'tests/Bug14013.php';
-    require_once 'tests/Bug15453.php';
-    require_once 'tests/Bug16148.php';
-    require_once 'tests/ticket-19.php';
+    require_once 'tests/Bug7406Test.php';
+    require_once 'tests/Bug8085Test.php';
+    require_once 'tests/Bug14013Test.php';
+    require_once 'tests/Bug15453Test.php';
+    require_once 'tests/Bug16148Test.php';
+    require_once 'tests/Ticket19Test.php';
 
     /**
     * Test for File_Bittorrent2
@@ -50,18 +50,18 @@
     * @author Markus Tacker <m@tacker.org>
     * @version $Id$
     */
-    class Tests_AllTests {
+    class AllTests {
 
         public static function suite() {
             $suite = new PHPUnit_Framework_TestSuite();
 
-            $suite->addTestSuite('Tests_FileBittorrent2');
-            $suite->addTestSuite('Tests_Bug7406');
-            $suite->addTestSuite('Tests_Bug8085');
-            $suite->addTestSuite('Tests_Bug14013');
-            $suite->addTestSuite('Tests_Bug15453');
-            $suite->addTestSuite('Tests_Bug16148');
-			$suite->addTestSuite('Tests_Ticket19');
+            $suite->addTestSuite('FileBittorrent2Test');
+            $suite->addTestSuite('Bug7406Test');
+            $suite->addTestSuite('Bug8085Test');
+            $suite->addTestSuite('Bug14013Test');
+            $suite->addTestSuite('Bug15453Test');
+            $suite->addTestSuite('Bug16148Test');
+			$suite->addTestSuite('Ticket19Test');
             return $suite;
         }
     }

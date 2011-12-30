@@ -45,7 +45,7 @@
     * @author Robin H. Johnson <robbat2@gentoo.org>
     * @version $Id$
     */
-    class Tests_FileBittorrent2 extends PHPUnit_Framework_TestCase
+    class FileBittorrent2Test extends PHPUnit_Framework_TestCase
     {
         public static $torrent = './install-x86-universal-2005.0.iso.torrent';
 

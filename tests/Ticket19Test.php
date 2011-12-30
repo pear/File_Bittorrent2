@@ -13,7 +13,7 @@
 
 require_once dirname(__FILE__) . '/../File/Bittorrent2/Decode.php';
 
-class Tests_Ticket19 extends PHPUnit_Framework_TestCase
+class Ticket19Test extends PHPUnit_Framework_TestCase
 {
 	public function testGetAnnounceList()
 	{

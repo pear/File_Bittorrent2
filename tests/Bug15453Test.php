@@ -48,7 +48,7 @@ ini_set( 'log_errors', 0 );
 * @author Markus Tacker <m@tacker.org>
 * @version $Id$
 */
-class Tests_Bug15453 extends PHPUnit_Framework_TestCase
+class Bug15453Test extends PHPUnit_Framework_TestCase
 {
 	public function testScrape()
 	{

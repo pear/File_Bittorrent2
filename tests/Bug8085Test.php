@@ -45,7 +45,7 @@
     * @author Markus Tacker <m@tacker.org>
     * @version $Id$
     */
-    class Tests_Bug8085 extends PHPUnit_Framework_TestCase
+    class Bug8085Test extends PHPUnit_Framework_TestCase
     {
         public static $torrent = './bugs/bug-8085/multiple_tracker.torrent';
 

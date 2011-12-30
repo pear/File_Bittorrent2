@@ -46,7 +46,7 @@
     * @author Markus Tacker <m@tacker.org>
     * @version $Id$
     */
-    class Tests_Bug7406 extends PHPUnit_Framework_TestCase
+    class Bug7406Test extends PHPUnit_Framework_TestCase
     {
         public static $torrent = './bugs/bug-7406/TestDir';
 

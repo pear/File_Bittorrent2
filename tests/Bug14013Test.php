@@ -46,7 +46,7 @@ require_once 'File/Bittorrent2/Decode.php';
 * @author Markus Tacker <m@tacker.org>
 * @version $Id$
 */
-class Tests_Bug14013 extends PHPUnit_Framework_TestCase
+class Bug14013Test extends PHPUnit_Framework_TestCase
 {
 	public function testMakePrivateTorrent()
 	{

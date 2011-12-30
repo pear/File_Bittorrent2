@@ -18,14 +18,14 @@ class Ticket19Test extends PHPUnit_Framework_TestCase
 	public function testGetAnnounceList()
 	{
 		$File_Bittorrent2_Decode = new File_Bittorrent2_Decode;
-		$info = $File_Bittorrent2_Decode->decodeFile(dirname(__FILE__) . '/../install-x86-universal-2005.0.iso.torrent');
+		$info = $File_Bittorrent2_Decode->decodeFile(dirname(__FILE__) . '/../examples/install-x86-universal-2005.0.iso.torrent');
 		$this->assertInternalType('array', $File_Bittorrent2_Decode->getAnnounceList());
 	}
 
 	public function testGetRawInfoHash()
 	{
 		$File_Bittorrent2_Decode = new File_Bittorrent2_Decode;
-		$info = $File_Bittorrent2_Decode->decodeFile(dirname(__FILE__) . '/../install-x86-universal-2005.0.iso.torrent');
+		$info = $File_Bittorrent2_Decode->decodeFile(dirname(__FILE__) . '/../examples/install-x86-universal-2005.0.iso.torrent');
 		$this->assertInternalType('string', $File_Bittorrent2_Decode->getInfoHash(true));
 		$this->assertEquals(20, strlen($File_Bittorrent2_Decode->getInfoHash(true)));
 		$this->assertEquals(40, strlen($File_Bittorrent2_Decode->getInfoHash()));

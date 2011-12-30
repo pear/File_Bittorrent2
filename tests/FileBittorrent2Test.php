@@ -47,7 +47,7 @@
     */
     class FileBittorrent2Test extends PHPUnit_Framework_TestCase
     {
-        public static $torrent = './install-x86-universal-2005.0.iso.torrent';
+        public static $torrent = './examples/install-x86-universal-2005.0.iso.torrent';
 
         public function testInfoHash()
         {

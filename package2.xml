@@ -47,20 +47,23 @@ http://pear.php.net/dtd/package-2.0.xsd">
                     <file name="Exception.php" role="php" />
                 </dir>
             </dir>
-            <file name="example.php" role="doc" />
-            <file name="example_mktorrent.php" role="doc" />
-            <file name="install-x86-universal-2005.0.iso.torrent" role="doc" />
-            <file name="scrape.php" role="doc" />
-            <file name="torrentinfo.php" role="doc" />
-            <dir name="Tests">
+            <dir name="examples">
+                <file name="example.php" role="doc" />
+                <file name="example_mktorrent.php" role="doc" />
+                <file name="install-x86-universal-2005.0.iso.torrent" role="doc" />
+                <file name="scrape.php" role="doc" />
+                <file name="torrentinfo.php" role="doc" />
+                <file name="infohash.php" role="doc" />
+            </dir>
+            <dir name="tests">
                 <file name="AllTests.php" role="test" />
-                <file name="Bug7406.php" role="test" />
-                <file name="Bug8085.php" role="test" />
-				<file name="Bug14013.php" role="test" />
-				<file name="Bug15453.php" role="test" />
-				<file name="Bug16148.php" role="test" />
-				<file name="ticket-19.php" role="test" />
-                <file name="FileBittorrent2.php" role="test" />
+                <file name="Bug7406Test.php" role="test" />
+                <file name="Bug8085Test.php" role="test" />
+				<file name="Bug14013Test.php" role="test" />
+				<file name="Bug15453Test.php" role="test" />
+				<file name="Bug16148Test.php" role="test" />
+				<file name="Ticket19Test.php" role="test" />
+                <file name="FileBittorrent2Test.php" role="test" />
             </dir>
         </dir>
     </contents>

@@ -51,6 +51,8 @@
 
         public function testInfoHash()
         {
+            exec('which torrentinfo-console', $torrentInfoConsole, $code);
+            if ($code !== 0) $this->markTestSkipped();
             $File_Bittorrent2_Decode = new File_Bittorrent2_Decode;
             $File_Bittorrent2_Decode->decodeFile(self::$torrent);
             exec('torrentinfo-console ' . escapeshellarg(self::$torrent), $bt);

@@ -33,7 +33,7 @@
 
     ini_set('display_errors', 1);
 
-    require_once 'tests/FileBittorrent2.php';
+    require_once 'tests/FileBittorrent2Test.php';
     require_once 'tests/Bug7406.php';
     require_once 'tests/Bug8085.php';
     require_once 'tests/Bug14013.php';

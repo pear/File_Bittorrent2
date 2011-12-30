@@ -52,6 +52,8 @@ class Tests_Bug15453 extends PHPUnit_Framework_TestCase
 {
 	public function testScrape()
 	{
+        // The tracker is no longer active
+        $this->markTestSkipped();
 		if (!(bool)ini_get('allow_url_fopen')) $this->markTestSkipped();
 		// Decode the torrent
 		$File_Bittorrent2_Decode = new File_Bittorrent2_Decode;

@@ -56,7 +56,6 @@ http://pear.php.net/dtd/package-2.0.xsd">
                 <file name="infohash.php" role="doc" />
             </dir>
             <dir name="tests">
-                <file name="AllTests.php" role="test" />
                 <file name="Bug7406Test.php" role="test" />
                 <file name="Bug8085Test.php" role="test" />
 				<file name="Bug14013Test.php" role="test" />

@@ -1,0 +1,33 @@
+{
+    "authors": [
+        {
+            "email": "m@tacker.org",
+            "name": "Markus Tacker",
+            "role": "Lead"
+        },
+        {
+            "email": "j.nagash@gmail.com",
+            "name": "Justin Jones",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "./"
+        ]
+    },
+    "description": "More info available on: http://pear.php.net/package/File_Bittorrent2",
+    "license": "LGPL",
+    "name": "pear/file_bittorrent2",
+    "support": {
+        "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=File_Bittorrent2",
+        "source": "https://github.com/pear/File_Bittorrent2"
+    },
+    "type": "library",
+    "require": {
+        "pear/pear_exception": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    }
+}
